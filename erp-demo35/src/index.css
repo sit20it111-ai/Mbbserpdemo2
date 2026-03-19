@@ -1,0 +1,15 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --acc: #2563EB;
+  --acc2: #1d4ed8;
+  --black: #111111;
+  --black2: #1e1e1e;
+  --black3: #2c2c2c;
+  --white: #ffffff;
+  --gray2: #eeeeee;
+  --gray3: #cccccc;
+  --muted: #666666;
+  --topbar: 56px;
+}
+html, body, #root { height: 100%; overflow: hidden; }
+body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--black); }

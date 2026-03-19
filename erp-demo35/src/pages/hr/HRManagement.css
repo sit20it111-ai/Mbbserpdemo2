@@ -1,0 +1,167 @@
+/* ── HR FORM LAYOUT ── */
+.hr-form {
+  max-width: 1100px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px 20px;
+  margin-bottom: 8px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  letter-spacing: 0.01em;
+}
+
+.req {
+  color: #2563EB;
+  margin-left: 2px;
+}
+
+.form-input {
+  padding: 9px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #111;
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  outline: none;
+  transition: border 0.18s, box-shadow 0.18s;
+  width: 100%;
+}
+
+.form-input:focus {
+  border-color: #2563EB;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-input[type="file"] {
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+
+.err-msg {
+  font-size: 11px;
+  color: #dc2626;
+  margin-top: 2px;
+}
+
+/* ── SECTION TITLE ── */
+.section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2563EB;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 18px 0 10px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 16px;
+}
+
+/* ── SUBMIT BUTTON ── */
+.form-submit-row {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.submit-btn {
+  padding: 10px 32px;
+  background: #2563EB;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.18s, transform 0.1s;
+  letter-spacing: 0.02em;
+}
+
+.submit-btn:hover { background: #1d4ed8; }
+.submit-btn:active { transform: scale(0.98); }
+
+/* ── TABLE ── */
+.table-wrap {
+  overflow-x: auto;
+  margin-top: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.hr-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.hr-table thead {
+  background: #f8fafc;
+}
+
+.hr-table th {
+  padding: 11px 14px;
+  text-align: left;
+  font-weight: 600;
+  color: #444;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.hr-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #333;
+}
+
+.hr-table tr:last-child td { border-bottom: none; }
+.hr-table tr:hover td { background: #f8fafc; }
+
+.tbl-btn {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: opacity 0.15s;
+}
+.tbl-btn:hover { opacity: 0.8; }
+.tbl-btn.view  { background: #eff6ff; color: #2563EB; }
+.tbl-btn.edit  { background: #f0fdf4; color: #16a34a; }
+.tbl-btn.del   { background: #fef2f2; color: #dc2626; }
+
+/* ── I-CARD ── */
+.icard-wrap { margin: 20px 0; display: flex; }
+.icard { width: 340px; border: 2px solid #2563EB; border-radius: 14px; overflow: hidden; font-family: 'Inter', sans-serif; box-shadow: 0 4px 20px rgba(37,99,235,0.15); }
+.icard-header { background: #2563EB; padding: 16px 18px 12px; color: #fff; }
+.icard-logo { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 0.08em; line-height: 1; }
+.icard-inst { font-size: 11px; opacity: 0.85; margin-top: 2px; }
+.icard-body { background: #fff; padding: 18px; display: flex; gap: 16px; align-items: flex-start; }
+.icard-photo { flex-shrink: 0; }
+.icard-avatar { width: 64px; height: 64px; border-radius: 10px; background: #eff6ff; border: 2px solid #2563EB; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 700; color: #2563EB; }
+.icard-info { flex: 1; }
+.icard-name { font-size: 15px; font-weight: 700; color: #111; margin-bottom: 10px; }
+.icard-row { display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 5px; border-bottom: 1px solid #f1f5f9; padding-bottom: 4px; }
+.icard-row span { color: #888; }
+.icard-row b { color: #111; font-weight: 600; }
+.icard-footer { background: #f8fafc; border-top: 1px solid #e5e7eb; text-align: center; font-size: 10px; color: #999; padding: 8px; }

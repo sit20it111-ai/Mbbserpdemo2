@@ -1,0 +1,243 @@
+/* ══════════════════════════════════════════
+   STUDENT MODULE — shared styles
+   Mirrors HR / Session module conventions
+══════════════════════════════════════════ */
+
+/* ── Filter / Search card ── */
+.stu-filter-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.stu-filter-header {
+  background: #1e293b;
+  color: #fff;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.stu-filter-body {
+  padding: 20px 24px;
+}
+.stu-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+.stu-filter-row:last-child { margin-bottom: 0; }
+.stu-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1 1 200px;
+  min-width: 160px;
+}
+.stu-field label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #374151;
+}
+.stu-field input,
+.stu-field select,
+.stu-field textarea {
+  padding: 7px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  outline: none;
+  transition: border 0.18s;
+  background: #fff;
+}
+.stu-field input:focus,
+.stu-field select:focus,
+.stu-field textarea:focus {
+  border-color: #2563eb;
+}
+.stu-field textarea { resize: vertical; min-height: 80px; }
+
+/* ── Section banner (blue like screenshots) ── */
+.stu-section-banner {
+  background: #1e6fa8;
+  color: #fff;
+  padding: 9px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin: 20px 0 12px;
+}
+
+/* ── Buttons ── */
+.stu-btn {
+  padding: 8px 22px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.1s;
+  font-family: 'Inter', sans-serif;
+}
+.stu-btn:hover { opacity: 0.88; transform: translateY(-1px); }
+.stu-btn:active { transform: translateY(0); }
+.stu-btn-primary   { background: #1e293b; color: #fff; }
+.stu-btn-secondary { background: #6b7280; color: #fff; }
+.stu-btn-success   { background: #16a34a; color: #fff; }
+.stu-btn-danger    { background: #dc2626; color: #fff; }
+.stu-btn-sm { padding: 5px 12px; font-size: 12px; }
+
+.stu-btn-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 16px 0 4px;
+  flex-wrap: wrap;
+}
+
+/* ── Table ── */
+.stu-table-wrap {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.stu-table-title {
+  background: #1e293b;
+  color: #fff;
+  padding: 11px 18px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.stu-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.stu-table thead th {
+  background: #f1f5f9;
+  padding: 9px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+.stu-table tbody tr { border-bottom: 1px solid #f3f4f6; transition: background 0.12s; }
+.stu-table tbody tr:hover { background: #f8fafc; }
+.stu-table tbody td { padding: 9px 12px; color: #374151; }
+.stu-table tbody tr:last-child { border-bottom: none; }
+
+/* ── Badge / status ── */
+.stu-badge {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.stu-badge-green  { background: #dcfce7; color: #15803d; }
+.stu-badge-red    { background: #fee2e2; color: #b91c1c; }
+.stu-badge-blue   { background: #dbeafe; color: #1d4ed8; }
+.stu-badge-gray   { background: #f3f4f6; color: #6b7280; }
+.stu-badge-orange { background: #ffedd5; color: #c2410c; }
+
+/* ── Form grid (two-col) ── */
+.stu-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px 24px;
+}
+.stu-form-col-2 { grid-column: span 2; }
+
+/* ── Abroad extra block ── */
+.stu-abroad-block {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-top: 18px;
+}
+.stu-abroad-block .stu-section-banner {
+  background: #1d4ed8;
+  margin-top: 0;
+}
+
+/* ── Checkbox row ── */
+.stu-check-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #374151;
+  cursor: pointer;
+  padding: 6px 0;
+}
+.stu-check-row input[type="checkbox"] { width: 15px; height: 15px; cursor: pointer; }
+
+/* ── Empty state ── */
+.stu-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+/* ── Attendance grid ── */
+.att-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+.att-cell {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 8px 6px;
+  text-align: center;
+  font-size: 12px;
+}
+.att-cell .att-date { font-weight: 600; color: #374151; }
+.att-cell select { font-size: 11px; margin-top: 4px; width: 100%; border: 1px solid #d1d5db; border-radius: 4px; padding: 2px 4px; }
+
+/* ── Tabs ── */
+.stu-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid #e5e7eb;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.stu-tab {
+  padding: 9px 18px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.15s;
+}
+.stu-tab:hover { color: #2563eb; }
+.stu-tab.active { color: #2563eb; border-bottom-color: #2563eb; font-weight: 600; }
+
+/* ── Passport/Visa sub-sections ── */
+.stu-subsection { margin-top: 14px; }
+.stu-subsection-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #1d4ed8;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #bfdbfe;
+}
